@@ -1,0 +1,50 @@
+a:hover{
+    color: red;
+}
+
+
+.may{
+    font-size: 16.5px;
+    color: #099ADB ;
+}
+
+.yeu{
+    font-weight: bold;
+}
+
+.anh{
+    padding-left:  400px;
+}
+
+.hi{
+    font-style: italic;
+    margin: 580px;
+}
+
+.ha:hover{
+    color: red;
+    text-decoration: underline;
+
+}
+
+.ha{
+    color: #099ADB;
+}
+
+.ho:hover{
+    color:red;
+    text-decoration: underline;
+}
+
+.ho{
+    color: #099ADB;
+    padding-bottom: 40px;
+}
+
+.lo{
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}

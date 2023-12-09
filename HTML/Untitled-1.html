@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Bootstrap</title>
+  <link rel="stylesheet" href="libs/megamenu/css/style.css">
+  <link rel="stylesheet" href="libs/bootstrap5.2.1/css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/layout.css"/>
+</head>
+<body>
+<section class="section">
+  <div class="container">
+    <div class="menu-container">
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="http://marioloncarek.com">About</a>
+            <ul>
+              <li><a href="#">School</a>
+                <ul>
+                  <li><a href="#">Lidership</a></li>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Locations</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Study</a>
+                <ul>
+                  <li><a href="#">Undergraduate</a></li>
+                  <li><a href="#">Masters</a></li>
+                  <li><a href="#">International</a></li>
+                  <li><a href="#">Online</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Research</a>
+                <ul>
+                  <li><a href="#">Undergraduate research</a></li>
+                  <li><a href="#">Masters research</a></li>
+                  <li><a href="#">Funding</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Something</a>
+                <ul>
+                  <li><a href="#">Sub something</a></li>
+                  <li><a href="#">Sub something</a></li>
+                  <li><a href="#">Sub something</a></li>
+                  <li><a href="#">Sub something</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">News</a>
+            <ul>
+              <li><a href="#">Today</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Sport</a></li>
+            </ul>
+          </li>
+          <li><a href="http://marioloncarek.com">Contact</a>
+            <ul>
+              <li><a href="#">School</a>
+                <ul>
+                  <li><a href="#">Lidership</a></li>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Locations</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Study</a>
+                <ul>
+                  <li><a href="#">Undergraduate</a></li>
+                  <li><a href="#">Masters</a></li>
+                  <li><a href="#">International</a></li>
+                  <li><a href="#">Online</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Study</a>
+                <ul>
+                  <li><a href="#">Undergraduate</a></li>
+                  <li><a href="#">Masters</a></li>
+                  <li><a href="#">International</a></li>
+                  <li><a href="#">Online</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Empty sub</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="description">
+      <h4><a href="https://github.com/marioloncarek/megamenu-js" target="_blank">Star and fork on github</a></h4>
+      <iframe src="https://ghbtns.com/github-btn.html?user=marioloncarek&repo=megamenu-js&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+      <iframe src="https://ghbtns.com/github-btn.html?user=marioloncarek&repo=megamenu-js&type=fork&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+      <h3>megamenu.js - Last responsive megamenu you'll ever need</h3>
+      <h5>Features:</h5>
+      <ul>
+        <li>IE8 Compatible (jquery animated)</li>
+        <li>No classes! (for dropdowns)</li>
+        <li>Smart - knows when to show megamenu</li>
+        <li>100% responsive</li>
+        <li>Seamless wordpress integration</li>
+        <li>Open source!</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="bg-warning col-3">AA</div>
+      <div class="bg-danger col-6">BB</div>
+      <div class="bg-primary col">CC</div>
+      <div class="bg-info col">DD</div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="bg-warning col-3">AA</div>
+      <div class="bg-danger col-6">BB</div>
+      <div class="bg-primary col">CC</div>
+      <div class="bg-info col">DD</div>
+    </div>
+  </div>
+</section><section class="section">
+  <div class="container">
+    <div class="row">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="row" id="ls">
+
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+    var xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      var data = JSON.parse(this.responseText);
+      var ls = data.data;
+      for (var i = 0; i < ls.length; i++) {
+        var li_html = `<div class="col-3">
+        <div class="card mb-3 mt-1">
+          <img src="${ls[i].image}" class="card-img-top" alt="..."/>
+          <div class="card-body">
+            <h5 class="card-title">${ls[i].name}</h5>
+            <p class="card-text">${ls[i].description}</p>
+            <a href="#" class="btn btn-primary">${ls[i].price}</a>
+          </div>
+        </div>
+      </div>`;
+        var ds = document.getElementById("ls");
+        ds.innerHTML += li_html;
+      }
+    }
+    var url = "https://foodgroup.herokuapp.com/api/today-special";
+    xhttp.open("GET", url, true);
+    xhttp.send();
+</script>
+<script type="text/javascript" src="libs/megamenu/js/vendor/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="libs/megamenu/js/megamenu.js"></script>
+</body>
+</html>

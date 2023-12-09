@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css - html</title>
+</head>
+<body>
+  <!-- <div></div> --> 
+   <!--ID & CLASS-->
+   <p class="text-color">Noi dung 1</p>
+   <p class="text-color">Noi dung 2</p>
+   <p class="text-color">Noi dung 3</p>
+   <p class="text-color">Noi dung 4</p>
+
+   <p id="text-color-id-1">Noi dung 5</p>
+   <p id="text-color-id-2">Noi dung 6</p>
+
+    <!--Block - Inline-->
+    <p id="box-1">Noi dung</p>
+    <span>Span 1</span> <span>Span 2</span>
+
+    <!-- Đơn vị tính-->
+    <!-- 1. Tuyệt đối: pixel-->
+    <p id="text-meow">Meowcarry..</p>
+    <div id="box-unit">
+
+    </div>
+    <!--2. Tương đối: % | em | rem | vh | vw -->
+    <div id="box-unit-1">
+
+    </div>
+
+    <!-- Rem | em -->
+    <div id="rem-unit"> 
+        <p>Đơn vị tính rem</p>
+    </div>
+    <div id="em-unit"> 
+        <p>Đơn vị tính em</p>
+    </div>
+
+    <!-- Margin - Paddin -->
+    <div id="box-m-1">Nội dung box 1</div>
+    <div id="box-m-2">Nội dung box 2</div>
+    
+    
+</body>
+<style>
+    /* div{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    } */
+    html{
+        font-size: 20px;
+    }
+    .text-color{color:red;}
+
+    #text-color-id-1 {color:rebeccapurple}
+    #text-color-id-2 {color:green}
+    
+    #box-1{
+        width: 100%;
+        background-color: aquamarine;}
+        #text-meow{
+            font-size: 24px;
+        }
+    #box-unit{
+        width: 500px;
+        height: 200px;
+        background-color: aqua;
+    }
+    #box-unit-1{
+        width: 50%;
+        height: 200px;
+        background-color:rgb(128, 12, 132);
+    }
+    #rem-unit p {color:brown;
+     font-size: 2rem; /* 2rem = 2 x 20 = 40px */
+    }
+    #em-unit{font-size:30px;}
+    #em-unit p {color:darkmagenta;
+    font-size: 2em;  /* 2em = 2 x 30 = 60px */
+    }
+
+    #box-m-1 {
+        width: 150px;
+        height: 150px;
+        background-color:green ;
+        padding: 10px 20px 30px; 
+        /* top 10px - left & right 20px - bottom 30px */;
+        margin-bottom: 30px;
+    }
+    #box-m-2 {
+        width: 150px;
+        height: 150px;
+        background-color:yellow;
+    }
+</style>
+</html>

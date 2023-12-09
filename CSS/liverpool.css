@@ -1,0 +1,83 @@
+a:hover{
+    color: red;
+}
+
+.ha{
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+}
+
+.hi{
+    background-color: #ea0000;
+    color: white;
+    font: 13px ;
+    font-weight: 700;
+    font-family: 'Roboto Slab'
+
+}
+
+.hu{
+    font: 13px;
+    font-weight: 700;
+    font-family: 'Roboto Slab'
+
+}
+
+.he{
+    font-weight: bold;
+}
+
+.ho{
+    padding-left: 350px;
+    width: 800px;
+    height: 400px;
+    padding-top: 25px
+}
+
+.la{
+    font-style: italic;
+    margin: 580px;
+}
+
+.li:hover{
+    color: red;
+}
+
+.li{
+    color: #099adb;
+}
+
+.lu:hover{
+    color: red;
+}
+
+.lu{
+    color: #099adb;
+}
+
+.le{
+    color: #099adb;
+
+}
+
+.lo{
+    font-style: italic;
+}
+
+.sa{
+    font-weight: bold;
+}
+
+.si{
+    font-style: italic;
+    padding-left: 550px;
+}
+
+.su{
+    color: #666;
+    padding-left: 1100px;
+}
